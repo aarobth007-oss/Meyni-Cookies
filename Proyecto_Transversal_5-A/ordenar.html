@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEYNI COOKIES - ORDER</title>
+    <link rel="icon" href="Imagenes/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e3d7;
+            color: #333;
+        }
+
+        header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        .article-container-cover {
+            text-align: center;
+            margin: 20px;
+            color: #d81b60;
+        }
+
+        .content {
+            padding: 30px;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d81b60;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c5114b;
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #d81b60;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 1px solid #d81b60;
+            margin: 20px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c5114b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-title"><i class="fas fa-cookie-bite"></i> Formulario de Pedido</div>
+        <a href="Pagina_Principal.html" class="back-link"><i class="fas fa-home"></i> Volver a Inicio</a>
+    </header>
+
+    <main>
+        <div class="article-container-cover">
+            <h1>Bienvenido</h1><br>
+            <p>Complete la información a continuación</p>
+        </div>
+
+        <div class="content">
+            <form action="ticket.php" method="post">
+                <hr>
+                <h1>Datos Personales</h1>
+                <div class="form-group">
+                    <label for="cliente_id">Cliente ID:</label>
+                    <input type="text" name="cliente_id" id="cliente_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                </div>
+
+                <hr>
+                <h1>¿De dónde eres?</h1>
+                <div class="form-group">
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" name="nacionalidad" id="nacionalidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" required>
+                        <option value="" disabled selected>Selecciona un estado</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Coahuila">Coahuila</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" name="cp" id="cp" required>
+                </div>
+                <div class="form-group">
+                    <label for="colonia">Colonia:</label>
+                    <select name="colonia" id="colonia" required>
+                        <option value="" disabled selected>Seleccione su colonia</option>
+                        <option value="El Chaparal">El Chaparal</option>
+                        <option value="Gomez Morín">Gomez Morín</option>
+                        <option value="La Campiña">La Campiña</option>
+                    </select>
+                </div>
+
+                <hr>
+                <h1>Comprar</h1>
+                <div class="form-group">
+                    <label for="tipo_galleta">Tipo de galleta:</label>
+                    <select name="tipo_galleta" id="tipo_galleta" required onchange="actualizarPrecio()">
+                        <option value="" disabled selected>Selecciona una galleta</option>
+                        <option value="chocolate" data-precio="20">Galleta de chocolate - $20</option>
+                        <option value="vainilla" data-precio="15">Galleta de vainilla - $15</option>
+                        <option value="chocolate" data-precio="45">Galleta artesanal - $45</option>
+                        <option value="chocolate" data-precio="30">Galleta gourmet - $30</option>
+                        <option value="chocolate" data-precio="20">Galleta sin gluten - $20</option>
+                        <option value="chocolate" data-precio="50">Galleta para compartir - $50</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" name="cantidad" id="cantidad" required min="1" onchange="actualizarPrecio()">
+                </div>
+                <div class="form-group">
+                    <label for="iva">IVA:</label>
+                    <input type="text" name="iva" id="iva" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="total">Total:</label>
+                    <input type="text" name="total" id="total" readonly>
+                </div>
+
+                <hr>
+                <h1>Datos Adicionales</h1>
+                <div class="form-group">
+                    <label for="contacto_emergencia">Contacto de emergencia:</label>
+                    <input type="tel" name="contacto_emergencia" id="contacto_emergencia" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Comentarios o instrucciones adicionales:</label>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea>
+                </div>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+                <hr>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meyni Cookies. Derechos reservados CECyTES "Justo Sierra".</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function actualizarPrecio() {
+            const select = document.getElementById('tipo_galleta');
+            const cantidad = document.getElementById('cantidad').value;
+            const precio = parseFloat(select.options[select.selectedIndex].dataset.precio);
+            const iva = (precio * 0.16).toFixed(2);
+            const total = (precio + parseFloat(iva)) * cantidad;
+            document.getElementById('iva').value = iva;
+            document.getElementById('total').value = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

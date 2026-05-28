@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEYNI COOKIES - PROCESS</title>
+    <link rel="icon" href="Imagenes/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fed1ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d81b60;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-title i {
+            margin-right: 5px;
+            font-size: 1.5rem;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin: 20px;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            background-image: url('Imagenes/logo01.png');
+            background-size: cover;
+            background-position: center;
+            filter: blur(1px) brightness(1);
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(248, 155, 202, 0.5);
+            z-index: 2;
+        }
+
+        .steps {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        aside {
+            background-color: rgba(200, 150, 250, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <i class="fas fa-bread-slice"></i>
+            Proceso de Elaboración
+        </div>
+        <a href="Pagina_Principal.html" class="back-link">
+            <i class="fas fa-home"></i> Volver al inicio
+        </a>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="background-image"></div>
+            <div class="overlay"></div>
+            <div class="steps">
+                <aside>
+                    <h2>PASO 1</h2>
+                    <p>Se colocan 5 gr de azúcar y 1 kg de harina en un tazón para mezclarlos.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 2</h2>
+                    <p>Con 3 cucharadas de maicena, se coloca 1 1/2 kg de azúcar mascabado y 1 1/2 kg de azúcar estándar y se mezcla con el kilo de harina en un bowl.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 3</h2>
+                    <p>Después a la mezcla se le agregan 3 barras de mantequilla, 5 cucharadas de vainilla y 6 claras de huevo con 1/2 cucharadas de sal.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 4</h2>
+                    <p>Mezclar todos los ingredientes del bowl hasta que no se pegue en las manos. También se le agrega 1 1/2 cucharadas de polvo para hornear.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 5</h2>
+                    <p>Con la masa ya lista, la dejamos reposar por 25 minutos en el refrigerador.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 6</h2>
+                    <p>Después preparamos cada porción en bolitas con la masa lista y en cada una agregamos chispas de chocolate.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 7</h2>
+                    <p>Acomodamos las porciones en la hoja para hornear.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 8</h2>
+                    <p>Preparamos en horno y encendemos.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 9</h2>
+                    <p>Dejamos las galletas por 10 minutos en el horno.</p>
+                </aside>
+                <aside>
+                    <h2>PASO 10</h2>
+                    <p>Las dejamos enfriar y finalmente empaquetamos.</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meyni Cookies. Derechos reservados CECyTES "Justo Sierra".</p>
+    </footer>
+</body>
+</html>

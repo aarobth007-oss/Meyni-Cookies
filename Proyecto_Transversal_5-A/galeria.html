@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEYNI COOKIES - GALLERY</title>
+    <link rel="icon" href="Imagenes/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e3d7; 
+            color: #333;
+        }
+
+        header {
+            background-color: #e0e0e0; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d81b60; 
+            display: flex;
+            align-items: center;
+        }
+
+        .page-title i {
+            margin-right: 5px; 
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-link i {
+            margin-right: 5px; 
+        }
+
+        .content {
+            padding: 30px;
+            max-width: 1400px;
+            margin: 50px auto;
+            background-color: #fff; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d81b60; 
+            margin-bottom: 20px; 
+            display: flex;
+            align-items: center;
+        }
+
+        h1 i {
+            margin-right: 5px; 
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 1.6;
+            text-align: center; 
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d81b60;
+            margin-top: 15px;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .stars {
+            color: gold;
+            margin: 10px 0;
+        }
+
+        .sale-highlight {
+            background-color: #ffcc00;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #e0e0e0; 
+            padding: 10px; 
+            text-align: center;
+            width: 100%;
+            margin-top: 50px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <i class="fas fa-cookie-bite"></i>Galería de Galletas
+        </div>
+        <a href="Pagina_Principal.html" class="back-link"><i class="fas fa-home"></i>Volver a Inicio</a>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1><i class="fas fa-cookie-bite"></i>Descubre nuestras deliciosas galletas</h1>
+            <p>¡Elige tus favoritas y disfruta del sabor único de MEYNI COOKIES!</p>
+
+            <div class="gallery-container">
+                <div class="product-card sale-highlight">
+                    <img src="Imagenes/imgGal01.png" alt="Galleta de la semana">
+                    <div class="product-title">Galleta de la Semana - Chocolate</div>
+                    <div class="product-description">La más popular, ¡no te la puedes perder!</div>
+                    <div class="product-description">$20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Imagenes/imgGal02.png" alt="Galleta 2">
+                    <div class="product-title">Galleta de Vainilla</div>
+                    <div class="product-description">Sabor suave con un toque de vainilla.</div>
+                    <div class="product-description">$15</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Imagenes/imgGal03.png" alt="Galleta 3">
+                    <div class="product-title">Galleta Artesanal</div>
+                    <div class="product-description">Para los amantes de lo casero.</div>
+                    <div class="product-description">$45</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Imagenes/imgGal04.png" alt="Galleta 4">
+                    <div class="product-title">Galleta Gourmet</div>
+                    <div class="product-description">Dulce y de sabor delicado</div>
+                    <div class="product-description">$30</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Imagenes/imgGal05.png" alt="Galleta 5">
+                    <div class="product-title">Galleta sin Gluten</div>
+                    <div class="product-description">Perfectas para todo publico</div>
+                    <div class="product-description">$20</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Imagenes/imgGal06.png" alt="Galleta 6">
+                    <div class="product-title">Galletas para compartir</div>
+                    <div class="product-description">Perfecta para ocasiones especiales</div>
+                    <div class="product-description">$50</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Galletas Deliciosas. Derechos reservados CECyTES "Justo Sierra".</p>
+    </footer>
+</body>
+</html>

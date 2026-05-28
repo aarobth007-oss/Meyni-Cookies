@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEYNI COOKIES - OPINIONS</title>
+    <link rel="icon" href="Imagenes/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7e3d7;
+            color: #333;
+        }
+
+        header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        .article-container-cover {
+            text-align: center;
+            margin: 20px;
+            color: #d81b60;
+        }
+
+        .content {
+            padding: 30px;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d81b60;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .clasificacion {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .clasificacion label {
+            font-size: 3rem;
+            color: #d81b60;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .clasificacion label:hover,
+        .clasificacion label:hover ~ label {
+            color: orange;
+        }
+
+        input[type="radio"]:checked ~ label {
+            color: orange;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c5114b;
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #d81b60;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 1px solid #d81b60;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="page-title"><i class="fas fa-comment-dots"></i> Formulario de Opinión</div>
+        <a href="Pagina_Principal.html" class="back-link"><i class="fas fa-home"></i> Volver a Inicio</a>
+    </header>
+
+    <main>
+        <div class="article-container-cover">
+            <h1>¡Queremos saber tu opinión!</h1><br>
+            <p>Tu opinión es muy importante para nosotros. Por favor, cuéntanos qué piensas de nuestras galletas y servicio.</p>
+        </div>
+
+        <div class="content">
+            <form action="reseña.php" method="post">
+                <hr>
+                <h1>Datos Personales</h1>
+                <div class="form-group">
+                    <label for="numero_venta">Número de Venta:</label>
+                    <input type="text" name="numero_venta" id="numero_venta" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+
+                <hr>
+                <h1>Opinión</h1>
+                <div class="form-group">
+                    <label for="calificacion">Calificación:</label>
+                    <div class="clasificacion">
+                        <input id="radio5" type="radio" name="calificacion" value="5">
+                        <label for="radio5">★</label>
+                        <input id="radio4" type="radio" name="calificacion" value="4">
+                        <label for="radio4">★</label>
+                        <input id="radio3" type="radio" name="calificacion" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio2" type="radio" name="calificacion" value="2">
+                        <label for="radio2">★</label>
+                        <input id="radio1" type="radio" name="calificacion" value="1">
+                        <label for="radio1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="opinion">Tu Opinión:</label>
+                    <textarea name="opinion" id="opinion" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="sugerencias">Sugerencias Adicionales:</label>
+                    <textarea name="sugerencias" id="sugerencias" rows="4"></textarea>
+                </div>
+
+                <p>
+                    <button type="submit">Enviar Opinión</button>
+                </p>
+                <hr>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meyni Cookies. Derechos reservados CECyTES "Justo Sierra".</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

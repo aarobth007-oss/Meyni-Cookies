@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEYNI COOKIES - HOME</title>
+    <link rel="icon" href="Imagenes/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fed1ff;
+            color: #333;
+            padding-top: 60px;
+        }
+
+        header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .page-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        .page-title i {
+            font-size: 1.5rem;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .register-link {
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: flex;
+            margin: 20px;
+            height: 70vh;
+        }
+
+        .logo-container {
+            flex: 2;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .company-logo {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+
+        .tagline-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .contact-button,
+        .index-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #f8c6d8;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #d81b60;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            margin: 10px 0;
+        }
+
+        .contact-button:hover,
+        .index-button:hover {
+            background-color: #f1b2c4;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .cookie-image {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .index {
+            margin: 140px 20px 20px;
+            padding: 10px;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .index::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Imagenes/logo01.png');
+            background-size: cover;
+            filter: blur(1px) brightness(1);
+            z-index: 1;
+        }
+
+        .index::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(248, 155, 202, 0.3);
+            z-index: 2;
+        }
+
+        .index h2, .index ul {
+            position: relative;
+            z-index: 3;
+        }
+
+        .index h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .index ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .index li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <i class="fas fa-home"></i> Página Principal
+        </div>
+        <div class="header-content">
+            <input type="text" placeholder="Buscar galletas..." class="search-bar">
+            <a href="registrarse.html" class="register-link">
+                <i class="fas fa-user-plus"></i> Registrarse
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="logo-container">
+                <img src="Imagenes/logo00.png" alt="Galletas Deliciosas" class="company-logo">
+                <div class="tagline-container">
+                    <p class="tagline">¡Las mejores galletas para todos!</p>
+                    <a href="contacto.html" class="contact-button">Contáctanos</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/logo08.png" alt="Galletas" class="cookie-image">
+            </div>
+        </div>
+
+        <div class="index">
+            <h2>ÍNDICE</h2>
+            <ul>
+                <li><a href="mision.html" class="index-button">Misión</a></li>
+                <li><a href="vision.html" class="index-button">Visión</a></li>
+                <li><a href="quienes_somos.html" class="index-button">¿Quiénes somos?</a></li>
+                <li><a href="producto.html" class="index-button">Productos</a></li>
+                <li><a href="proceso.html" class="index-button">Proceso de elaboración</a></li>
+                <li><a href="galeria.html" class="index-button">Galería</a></li>
+                <li><a href="ordenar.html" class="index-button">Hacer pedido</a></li>
+                <li><a href="opiniones.html" class="index-button">Opiniones</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Galletas Deliciosas. Derechos reservados CECyTES "Justo Sierra".</p>
+    </footer>
+</body>
+</html>
